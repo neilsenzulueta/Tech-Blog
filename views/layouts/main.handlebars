@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Im a boilerplate</title>
+  <title>Tech Blog</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div >
     <header>
+      <h1>
+        <a href="/">Tech Blog</a>
+        </h1>
       <nav>
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/dashboard">Dashboard</a> |
+        <button class="btn-no-style" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
